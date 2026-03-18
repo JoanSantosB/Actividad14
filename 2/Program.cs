@@ -1,4 +1,6 @@
-﻿List<Producto> productos = new List<Producto>();
+﻿using System.ComponentModel.Design;
+
+List<Producto> productos = new List<Producto>();
 Console.Write("¿Cuántos productos desea registrar?: ");
 int cantidad=int.Parse(Console.ReadLine());
 if (cantidad > 0)
@@ -45,6 +47,10 @@ if (cantidad > 0)
     Console.WriteLine();
     Console.WriteLine("Producto com mayor precio: ");
     precio.MostraInformacion();
+}
+else
+{
+    Console.WriteLine("Debe ingresar una cantidad mayor que 0");
 }
 class Producto
 {
