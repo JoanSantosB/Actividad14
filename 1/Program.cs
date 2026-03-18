@@ -54,7 +54,7 @@ if (cantidad > 0)
             mejor=e;
         }
     }
-    Console.WriteLine("\nEstudiante destacado: ");
+    Console.WriteLine("\nEstudiante con mejor promedio: ");
     mejor.MostrarInformacion();
 }
 else
