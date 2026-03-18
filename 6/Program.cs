@@ -9,7 +9,7 @@ if (cantidad > 0)
         Console.WriteLine($"\tEstudiante {i + 1}");
         Console.Write("Ingrese el carnet: ");
         int carnet = int.Parse(Console.ReadLine());
-        if (estudientes.ContainsKey(carnet))
+        if (estudientes.ContainsKey(carnet)) 
         {
             Console.WriteLine("Este carnet ya existe...Ingrese otro carnet");
             i--;
